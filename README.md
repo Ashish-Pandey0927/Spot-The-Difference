@@ -20,7 +20,7 @@
 
 ![Game Screenshot](https://drive.google.com/file/d/1jqFG78CdSkiyUDG9m_r_R4yClI38-VFZ/view?usp=drive_link)
 
-Try the live version of the game here: [Live Demo](#)
+Try the live version of the game here: [Live Demo](https://spot-the-difference-mauve.vercel.app/)
 
 ---
 
