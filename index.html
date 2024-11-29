@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spot The Difference</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title" id="gameTitle">Spot the Difference</h2>
+      <p class="score-box" id="score-box">Score: 0</p>
+      <p class="timer-box" id="timer-box">Time: 0s</p>
+
+      <div class="img-box">
+        <div id="image1Container" class="image1Container">
+          <img id="image1" src="/Image1.jpg" alt="" />
+        </div>
+        <div id="image2Container" class="image2Container">
+          <img id="image2" src="/Image2.jpg" alt="" />
+        </div>
+      </div>
+      <div class="Rules">
+        <h3>Rules To Play:</h3>
+        <ul>
+          <li>Look at the two images carefully.</li>
+          <li>Find and click on the differences between the two images.</li>
+          <li>Each correct difference will increase your score by 1 point.</li>
+          <li>Try to find all the differences as quickly as possible.</li>
+          <li>You can play multiple rounds to improve your score!</li>
+        </ul>
+      </div>
+      <audio id="backgroundMusic" src="/bgsound.mp3" loop></audio>
+      <button id="toggleSound">Play Sound</button>
+      <input
+        type="range"
+        id="volumeControl"
+        min="0"
+        max="1"
+        step="0.1"
+        value="0.5"
+      />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Lacquer&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/mars-landscape-alien-planet-martian-background/1781.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title {
+  font-family: "Lacquer", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  color: #e9ecef;
+  padding: 10px;
+  text-align: center;
+}
+.score-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 44%;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: aliceblue;
+}
+.timer-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 44%;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: aliceblue;
+}
+.img-box {
+  position: relative;
+  left: 10%;
+  display: flex;
+  gap: 5px;
+  margin: 10px;
+}
+.image1Container,
+.image2Container {
+  position: relative;
+  display: inline-block;
+}
+img {
+  width: 600px;
+  height: auto;
+  border: 2px solid black;
+}
+.highlight {
+  position: absolute;
+  border: none;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  transition: border 0.3s ease;
+}
+.highlight.found {
+  border: 2px solid green;
+  width: auto;
+  height: auto;
+  pointer-events: none;
+}
+.Rules {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 20px;
+  text-align: left;
+}
+.Rules h3 {
+  margin-top: 0;
+  color: #333;
+}
+.Rules ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.Rules li {
+  padding: 5px 0;
+  color: #555;
+}
+audio {
+  display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    body{
+        overflow-x: auto;
+    }
+    height: auto;
+    /* overflow: auto; */
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .score-box,
+  .timer-box {
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .img-box {
+    flex-direction: column;
+    left: 5%;
+  }
+  img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  body{
+    overflow: auto;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .score-box,
+  .timer-box {
+    font-size: 0.9rem;
+    width: 120px;
+  }
+  .img-box {
+    left: 0;
+    margin: 5px;
+  }
+  .Rules {
+    font-size: 0.9rem;
+  }
+}
